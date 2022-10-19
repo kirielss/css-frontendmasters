@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+@keyframes love {
+    to {
+        transform:scale(1.5)
+    }
+}
+
+
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: aliceblue;
@@ -60,6 +67,22 @@ main {
     margin-right: auto;
     border: 1px solid black;
 }
+
+.nerinho {
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.text img:hover {
+    border: 3px solid red;
+}
+
+.text img:hover + .nerinho {
+        animation: love 0.2s infinite linear;
+        animation-direction: alternate-reverse;
+} 
 
 .main-article {
     border: 3px solid black;
